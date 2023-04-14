@@ -16,12 +16,12 @@ type Config struct {
 	MaxAge time.Duration `mapstructure:"max_age"` // 会话有效时长，如：20s
 
 	// HS256相关
-	HS256SecretIsBase64 bool   `mapstructure:"hs256_secret_is_base64"`
-	HS256Secret         string `mapstructure:"hs256_secret"`
+	HS256SecretIsBase64 bool   `mapstructure:"hs256_secret_is_base64"` // 密钥是否为base64编码
+	HS256Secret         string `mapstructure:"hs256_secret"`           // 密钥
 
 	// RS256相关
-	PrivateKeyPath string `mapstructure:"private_key_path"`
-	PublicKeyPath  string `mapstructure:"public_key_path"`
+	PrivateKeyPath string `mapstructure:"private_key_path"` // 私钥路径
+	PublicKeyPath  string `mapstructure:"public_key_path"`  // 公钥路径
 }
 
 type JWT struct {
