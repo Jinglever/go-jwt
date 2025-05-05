@@ -8,7 +8,7 @@ import (
 	"time"
 
 	jgfile "github.com/Jinglever/go-file"
-	"github.com/golang-jwt/jwt"
+	"github.com/golang-jwt/jwt/v5"
 	"github.com/sirupsen/logrus"
 )
 
